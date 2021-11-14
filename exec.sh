@@ -32,7 +32,7 @@ do
     --def-run-env=DOWNLOAD_TIMEOUT:${DOWNLOAD_TIMEOUT} \
     --def-run-env=TIME_BETWEEN_STEPS:${TIME_BETWEEN_STEPS} \
     --def-run-env=GENERAL_TIMEOUT:${GENERAL_TIMEOUT} \
-    > ${COURT}/${YEAR}_${MONTH}.out 2> ${COURT}/${YEAR}_${MONTH}.err
+    > ${COURT}/${YEAR}_${MONTH}.out
 
     echo -e "\033[42;1;37m Executado com sucesso! \033[0m"
 done
