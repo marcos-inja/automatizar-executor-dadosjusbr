@@ -1,0 +1,17 @@
+# Altomatizador de tarefas
+
+## Como rodar
+Altere a primeira linha para bash, caso use bash:
+ ```sh
+ #!/bin/bash
+ ```
+Altere a variavel `EXECUTOR_CMD` para o caminho do `executor/cmd` completo
+Primeiro de permissão de execução:
+ ```sh
+ chmod +x exec.sh
+ ```
+Execute em seguida com `sudo`:
+ ```sh
+ sudo ./exec.sh
+ ```
+
