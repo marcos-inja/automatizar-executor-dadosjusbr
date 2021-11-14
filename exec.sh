@@ -17,11 +17,11 @@ echo -e "\033[1;32mPara qual tribunal?\033[0m"
 read COURT
 
 cd $EXECUTOR_CMD
+mkdir $COURT
 
 for MONTH in $MONTHS
 do
-    echo -e "\n\033[40;1;37mRodando para o orgão: ${COURT}, ano: ${YEAR} e mês: ${MONTH}\033[0m"
-    mkdir $COURT
+    echo -e "\n\033[40;1;37m Rodando para o orgão: ${COURT}, ano: ${YEAR} e mês: ${MONTH} \033[0m"
 
     sudo ./executor --in=${COURT}.json \
     --def-run-env=MONTH:${MONTH} \
@@ -32,5 +32,5 @@ do
     --def-run-env=GENERAL_TIMEOUT:${GENERAL_TIMEOUT} \
     > ${COURT}/${YEAR}_${MONTH}.out 2> ${COURT}/${YEAR}_${MONTH}.err
 
-    echo -e "\033[42;1;37mExecutado com sucesso!\033[0m"
+    echo -e "\033[42;1;37m Executado com sucesso! \033[0m"
 done
