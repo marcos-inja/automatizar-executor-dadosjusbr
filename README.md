@@ -4,7 +4,7 @@ Altere a primeira linha para bash, caso use bash:
  ```sh
  #!/bin/bash
  ```
-Altere a variavel `EXECUTOR_CMD` para o caminho do `executor/cmd` completo:
+Altere a variável `EXECUTOR_CMD` para o caminho do `executor/cmd` completo:
  ```sh
  # Caminho do executor cmd
  EXECUTOR_CMD=/home/marcos/dadosjusbr/coletar/executor/cmd
@@ -17,7 +17,7 @@ Execute em seguida com `sudo`:
  ```sh
  sudo ./exec.sh
  ```
- ## Não muito nescessario 
+ ## Não muito necessário 
  Adicione no final do comando do executor para ter a saída em um arquivo separado.
  ```sh
  2> ${COURT,,}/${YEAR}_${MONTH}.err
