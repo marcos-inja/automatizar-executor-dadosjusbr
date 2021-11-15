@@ -27,14 +27,14 @@ for MONTH in $MONTHS
 do
     echo -e "\n\033[40;1;37m Rodando para o orgão: ${COURT}, ano: ${YEAR} e mês: ${MONTH} \033[0m"
 
-    sudo ./executor --in=${COURT}.json \
+    sudo ./executor --in=${COURT,,}.json \
     --def-run-env=MONTH:${MONTH} \
     --def-run-env=YEAR:${YEAR} \
-    --def-run-env=COURT:${COURT} \
+    --def-run-env=COURT:${COURT^^} \
     --def-run-env=DOWNLOAD_TIMEOUT:${DOWNLOAD_TIMEOUT} \
     --def-run-env=TIME_BETWEEN_STEPS:${TIME_BETWEEN_STEPS} \
     --def-run-env=GENERAL_TIMEOUT:${GENERAL_TIMEOUT} \
-    > ${COURT}/${YEAR}_${MONTH}.out
+    > ${COURT,,}/${YEAR}_${MONTH}.out
 
     echo -e "\033[42;1;37m Executado com sucesso! \033[0m"
 done
