@@ -20,6 +20,6 @@ Execute em seguida com `sudo`:
  ## Não muito nescessario 
  Adicione no final do comando do executor para ter a saída em um arquivo separado.
  ```sh
- 2> ${COURT}/${YEAR}_${MONTH}.err
+ 2> ${COURT,,}/${YEAR}_${MONTH}.err
  ```
 
