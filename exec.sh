@@ -23,7 +23,7 @@ cd $EXECUTOR_CMD
 # Cria uma pasta para o orgão, ela recebe as saida
 mkdir $COURT
 
-for MONTH in $MONTHS
+for MONTH in ${MONTHS[*]}
 do
     echo -e "\n\033[40;1;37m Rodando para o orgão: ${COURT}, ano: ${YEAR} e mês: ${MONTH} \033[0m"
 
@@ -34,7 +34,7 @@ do
     --def-run-env=DOWNLOAD_TIMEOUT:${DOWNLOAD_TIMEOUT} \
     --def-run-env=TIME_BETWEEN_STEPS:${TIME_BETWEEN_STEPS} \
     --def-run-env=GENERAL_TIMEOUT:${GENERAL_TIMEOUT} \
-    > ${COURT,,}/${YEAR}_${MONTH}.out
+    > ${COURT,,}/${YEAR}_${MONTH}.out 
 
     echo -e "\033[42;1;37m Executado com sucesso! \033[0m"
 done
