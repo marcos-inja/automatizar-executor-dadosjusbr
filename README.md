@@ -1,4 +1,4 @@
-# Automatizador de tarefas
+# Automatizador de coletas
 ## Como rodar
 Altere a primeira linha para bash, caso use bash:
  ```sh
