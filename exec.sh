@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Caminho do executor cmd
 EXECUTOR_CMD=/home/marcos/dadosjusbr/coletar/executor/cmd

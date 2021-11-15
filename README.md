@@ -1,9 +1,5 @@
 # Automatizador de coletas
 ## Como rodar
-Altere a primeira linha para bash, caso use bash:
- ```sh
- #!/bin/bash
- ```
 Altere a variável `EXECUTOR_CMD` para o caminho do `executor/cmd` completo:
  ```sh
  # Caminho do executor cmd
