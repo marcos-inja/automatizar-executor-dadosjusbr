@@ -1,4 +1,4 @@
-# Altomatizador de tarefas
+# Automatizador de tarefas
 ## Como rodar
 Altere a primeira linha para bash, caso use bash:
  ```sh
